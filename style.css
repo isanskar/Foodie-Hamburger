@@ -18,7 +18,7 @@ header {
 }
 
 .header-content{
-    min-height: 80px;
+    min-height: 70px;
     max-width: 1290px;
     display: flex;
     align-items: center;
@@ -77,8 +77,8 @@ main{
 
 .hamburger-menu-container{
     display: none;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     overflow: hidden;
     position: relative;
 }
@@ -89,15 +89,15 @@ main{
     height: 200px;
     border-radius: 50%;
     position: absolute;
-    top: -120px;
-    right: -120px;
+    top: -126px;
+    right: -126px;
 }
 
 .hamburger-icon{
     font-size: 26px;
     position: absolute;
-    bottom: 30px;
-    left: 40px;
+    bottom: 28px;
+    left: 36px;
     cursor: pointer;
 }
 
