@@ -18,6 +18,7 @@ header {
 }
 
 .header-content{
+    min-height: 80px;
     max-width: 1290px;
     display: flex;
     align-items: center;
@@ -37,8 +38,9 @@ nav{
 .close-icon{
     display: none;
     position: absolute;
-    top: 8px;
+    top: 3px;
     right: 12px;
+    font-size: 22px;
     cursor: pointer;
 }
 
@@ -71,6 +73,32 @@ main{
 .img-container {
     max-width: 1290px;
     margin: 0 auto;
+}
+
+.hamburger-menu-container{
+    display: none;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hamburger-menu{
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -120px;
+    right: -120px;
+}
+
+.hamburger-icon{
+    font-size: 26px;
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    cursor: pointer;
 }
 
 .hero-section p{
@@ -176,7 +204,8 @@ main{
         margin: 0;
     }
 
-    .close-icon{
+    .close-icon,
+    .hamburger-menu-container{
         display: block;
     }
     
@@ -192,5 +221,14 @@ main{
 
     .logo{
         width: 30px;
+    }
+
+    .menu-open nav {
+        display: flex;
+        right: 24px;
+    }
+
+    .menu-open .hamburger-menu-container{
+        display: none;
     }
 }
